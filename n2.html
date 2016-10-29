@@ -3,28 +3,47 @@
 <head>
 <meta charset="utf-8">
 	<title>我的作品</title>
-   <script src="js/myfocus-2.0.1.min.js" type="text/javascript"></script>
-   <script src="js/mf-pattern/mF_kiki.js" type="text/javascript"> </script>
-   <link href="js/mf-pattern/mF_kiki.css" rel="stylesheet" type="text/css">
-   <script type="text/javascript">
-   myFocus.set({
-	   id:'picBOX'})
-	   pattern:'mF_kiki',称
-	   </script>
+
+  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+   <script src="js/picMove.js"></script>
+<script>
+    $(document).ready(function () {
+        var list = [{
+           
+            imgUrl: 'img/a1.png',
+            href: '#'
+            }, {
+            imgUrl: 'img/a2.png',
+            href: '#'
+            }, {
+            imgUrl: 'img/a3.png',
+            href: '#'
+            }, {
+            imgUrl: 'img/a4.png',
+            href: '#'
+            }, {
+            imgUrl: 'img/a5.png',
+            href: '#'
+            }]
+        
+        $('#box').fade({
+            url: list,
+            boxWid:1900,
+            boxHei:500
+        })
+    })
+
+    </script>
    
 	<style type="text/css">
-	*{margin: 0 auto; position: 0px;}
+	*{margin: 0 auto; position: 0px; font-family: "宋体";}
 a{
 	text-decoration:none;
 }
 li{
 	list-style-type:none;
 }
-.work{
-	
 
-
-}
 .top{
 	width: 1100px;
 	height:120px;
@@ -115,7 +134,10 @@ li{
 	position: absolute;
 	top: 750px;
 	left: 830px;
-	color: #DCDCDC ;
+	color:#FFBB00;
+}
+.g1:hover{
+  color: #0066FF ;
 }
  
  .s1{
@@ -178,6 +200,7 @@ li{
 	top: 85px;
 	right: 350px;
 }
+
 		</style>
 
 </head>
@@ -206,17 +229,8 @@ li{
 </div>
 </div>   <!--头部结束 -->
 
-<div class="ad" id="picBOX">      <!--轮播开始 -->
-<div class="pic">
-<ul>
-<li><a href="#"><img src="img/2.jpg"></a></li>
-<li><a href=""><img src="img/5.jpg"></a></li>
-<li><a href=""><img src="img/4.jpg"></a></li>
-<li><a href=""><img src="img/3.jpg"></a></li>
-<li><a href=""><img src="img/1.jpg"></a></li>
-</ul>
-</div>
-</div>        <!--轮播结束 -->
+<p>&nbsp;</p><p>&nbsp;</p>
+<div id="box"></div>        <!--轮播处 -->
 
 <div class="s0">    <!--三幅图开始 -->
 <h1 class="g1">前些日子的作品集合</h1></br>
