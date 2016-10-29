@@ -3,37 +3,14 @@
 <head>
 <meta charset="utf-8">
 	<title>我的作品</title>
-
-  <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
-   <script src="js/picMove.js"></script>
-<script>
-    $(document).ready(function () {
-        var list = [{
-           
-            imgUrl: 'img/a1.png',
-            href: '#'
-            }, {
-            imgUrl: 'img/a2.png',
-            href: '#'
-            }, {
-            imgUrl: 'img/a3.png',
-            href: '#'
-            }, {
-            imgUrl: 'img/a4.png',
-            href: '#'
-            }, {
-            imgUrl: 'img/a5.png',
-            href: '#'
-            }]
-        
-        $('#box').fade({
-            url: list,
-            boxWid:1900,
-            boxHei:500
-        })
-    })
-
-    </script>
+   <script src="JS/myfocus-2.0.1.min.js" type="text/javascript"></script>
+   <script src="JS/mf-pattern/mF_YSlider.js" type="text/javascript"></script>
+   <link href="JS/mf-pattern/mF_YSlider.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+	myFocus.set({
+		id:'picBOX'})
+		</script>
+    
    
 	<style type="text/css">
 	*{margin: 0 auto; position: 0px; font-family: "宋体";}
@@ -115,9 +92,7 @@ li{
  	height:520px;
  	position: relative;
  	top: 35px;
-   overflow: hidden;
- 
- 		
+   overflow: hidden;		
  }
 
 
@@ -229,8 +204,18 @@ li{
 </div>
 </div>   <!--头部结束 -->
 
-<p>&nbsp;</p><p>&nbsp;</p>
-<div id="box"></div>        <!--轮播处 -->
+<div class="ad" id="picBOX">     <!--轮播处 -->
+    <div class="pic">
+    <ul>
+    <li><a href=""><img src="img/a1.png"></a></li>
+    <li><a href=""><img src="img/a2.png"></a></li>
+    <li><a href=""><img src="img/a3.png"></a></li>
+    <li><a href=""><img src="img/a4.png"></a></li>
+    <li><a href=""><img src="img/a5.png"></a></li>
+    </ul>
+    </div>
+    </div>              <!--轮播结束 -->
+                              
 
 <div class="s0">    <!--三幅图开始 -->
 <h1 class="g1">前些日子的作品集合</h1></br>
