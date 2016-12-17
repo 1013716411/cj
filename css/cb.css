@@ -71,7 +71,18 @@
 }
 .text-color:hover,.text-color1:hover{      
  color:#996600;              
-}  
+}
+.col-css3-left img{
+  position: relative;
+  left: -200%;
+}
+.col-css3-right img{
+  position: relative;
+  right: -200%;
+}
+.col-css3-hide{
+  display: none;
+}   
 .col-css3 img{
   -webkit-transform: rotate(10deg);
   -webkit-transition: 1s;
@@ -166,8 +177,9 @@
   border-top: 2px solid #cccccc;
   padding-top: 50px;
 }
-
-/*语义化 */
+.top{
+  font-size: 18px;
+}
 
 .badge{
   background-color:#CC0033; 
@@ -199,14 +211,39 @@
 
 
 @media screen and ( max-width:600px){
-  .md-h2{font-size: 20px;line-height:30px;}
-  .text-color,.text-color1{font-size:25px;}
+  .md-h2{
+    font-size: 20px;
+    line-height:30px;
+  }
+  .text-color,.text-color1{
+    font-size:25px;
+  }
+   .col-css3-left img{
+  position: relative;
+  left: 0%;
+}
+.col-css3-right img{
+  position: relative;
+  right: 0%;
+}
 }
 @media screen and (min-width:601px) and (max-width:1000px){
- .md-h2{font-size: 25px;}
+ .md-h2{
+  font-size: 25px;
+ }
+ .col-css3-left img{
+  position: relative;
+  left: 0%;
+}
+.col-css3-right img{
+  position: relative;
+  right: 0%;
+}
 
 }   
 @media screen and (min-width:1001px){
- .md-h1{font-size: 60px;}
+ .md-h1{
+  font-size: 60px;
+ }
 
 }  
